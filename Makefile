@@ -1,8 +1,11 @@
 .DELETE_ON_ERROR:
 .SUFFIXES: .pdf
-.PHONY: clean
+.PHONY: clean install
 
 TEX=pdflatex
+FILES=banner.sty
+PREFIX=$(HOME)/texmf
+
 EXAMPLES=banner-example.pdf
 
 pdf: $(EXAMPLES)
@@ -12,4 +15,11 @@ pdf: $(EXAMPLES)
 	$(TEX) $<
 
 clean:
-	rm -f $(EXAMPLES)
+	rm -f *.aux *.log *.pdf
+
+install:
+	mkdir -p $(PREFIX)/tex/latex/custom/
+	cp $(FILES) $(PREFIX)/tex/latex/custom/
+
+uninstall:
+	cd $(PREFIX)/tex/latex/custom/ && rm -r $(FILES)
