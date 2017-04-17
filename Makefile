@@ -3,10 +3,15 @@
 .PHONY: clean install
 
 TEX=pdflatex
-FILES=banner.sty
+FILES=banner.sty \
+	  lists.sty \
+	  brief.cls
+
 PREFIX=$(HOME)/texmf
 
-EXAMPLES=banner-example.pdf
+EXAMPLES=banner-example.pdf \
+		 lists-examples.pdf \
+		 brief-example.pdf
 
 pdf: $(EXAMPLES)
 
