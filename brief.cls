@@ -64,6 +64,7 @@
 	\end{flushright}
 	\textbf{\Subject{}}
 
+	\raggedright
 }
 
 \RequirePackage{fancyhdr, lastpage}
