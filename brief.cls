@@ -26,7 +26,6 @@
 \RequirePackage{ocg-p} % Hide content from printers.
 \RequirePackage[none]{hyphenat}
 \RequirePackage[document]{ragged2e}
-\RequirePackage{banner}
 \setlength{\parskip}{1eM}
 
 %%%%%%%%%%%%%
@@ -51,6 +50,7 @@
 		pdfauthor={\@author},
 		pdftitle={\@title} -- {\@author},
 	}
+	\rule{0cm}{0cm}
 	\vspace{1.5cm}
 	\begin{flushleft}
 		{\scriptsize \@author, \Address}
