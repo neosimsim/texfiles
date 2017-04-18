@@ -22,7 +22,7 @@
 \LoadClass{article}
 \title{}
 
-\RequirePackage[left=2.5cm, top=2.0cm, right=2.0cm, bottom=2.0cm, columnsep=1.25cm]{geometry}
+\RequirePackage[left=2.4cm, top=2.0cm, right=2.0cm, bottom=2.0cm, columnsep=1.25cm]{geometry}
 \RequirePackage{ocg-p} % Hide content from printers.
 \RequirePackage[none]{hyphenat}
 \RequirePackage[document]{ragged2e}

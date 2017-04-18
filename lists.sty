@@ -40,7 +40,7 @@
 %     	  {One or more paragraphs describing what achieved during this application.}
 \newenvironment{eventlist}{
 	\renewcommand{\item}[4]{%
-			\basicrow{##1}{\parbox[t]{0.7\linewidth}{##2 \\ {\Large ##3} \ifstrempty{##4}{}{\medskip\\ ##4}}} \bigskip \\%
+			\basicrow{##1}{\parbox[t]{0.7\linewidth}{##2 \medskip\\ {\Large ##3} \ifstrempty{##4}{}{\medskip\\ ##4}}} \bigskip \\%
 	}
 	\begin{basictable}
 }{

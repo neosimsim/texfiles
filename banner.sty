@@ -49,7 +49,7 @@
 
 \newcommand{\banner}[1]{%
 	\begin{tikzpicture}[remember picture,overlay]
-		\node [anchor=north west, minimum width=2.5cm] (padding) at (current page.north west){};
+		\node [anchor=north west, minimum width=2.4cm] (padding) at (current page.north west){};
 		\node [rectangle, fill=themecolor, anchor=north west, minimum width=4cm, minimum height=2cm] (box) at (padding.north east){};
 		\node [anchor=north] (title) at (box.center){{\large\textcolor{white}{\textbf{#1}}}};
 	\end{tikzpicture}
