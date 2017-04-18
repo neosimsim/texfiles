@@ -20,13 +20,9 @@
 }
 \ProcessOptions\relax
 \LoadClass{article}
-\title{}
 
 \RequirePackage[left=2.4cm, top=2.0cm, right=2.0cm, bottom=2.0cm, columnsep=1.25cm]{geometry}
-\RequirePackage{ocg-p} % Hide content from printers.
 \RequirePackage[none]{hyphenat}
-\RequirePackage[document]{ragged2e}
-\setlength{\parskip}{1eM}
 
 %%%%%%%%%%%%%
 % Variables %
@@ -39,6 +35,12 @@
 \newcommand{\deliveryAdress}[1]{\renewcommand{\DeliveryAdress}{#1}}
 \newcommand{\Subject}{}
 \newcommand{\subject}[1]{\renewcommand{\Subject}{#1}}
+
+\RequirePackage{xcolor}
+\definecolor{darkgray}{HTML}{444444}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1eM}
 
 \RequirePackage[ocgcolorlinks]{hyperref}
 \AtBeginDocument{%
