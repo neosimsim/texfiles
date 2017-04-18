@@ -56,40 +56,20 @@
 %         {url}
 \newenvironment{projectlist}{
 	\renewcommand{\item}[3]{%
-			\cvrow{##1}{\parbox[t]{0.7\linewidth}{##2\medskip\\ {\footnotesize\url{##3}}}} \medskip \\%
+			\basicrow{##1}{\parbox[t]{0.7\linewidth}{##2\medskip\\ {\footnotesize\url{##3}}}} \medskip \\%
 	}
-	\begin{cvtable}
+	\begin{basictable}
 }{
-	\end{cvtable}
+	\end{basictable}
 }
 
 \newenvironment{factlist}{
 	\renewcommand{\item}[2]{%
-			\cvrow{##1}{\parbox[t]{0.7\linewidth}{##2}} \medskip \\%
+			\basicrow{##1}{\parbox[t]{0.7\linewidth}{##2}} \medskip \\%
 	}
-	\begin{cvtable}
+	\begin{basictable}
 }{
-	\end{cvtable}
-}
-
-\newenvironment{perslist}[1][]{
-	\newcommand{\picpath}{#1}
-	\par\vspace{-0.4cm}%
-	\begin{minipage}{0.7\linewidth}%
-		\begin{flushleft}%
-			\begin{factlist}%
-			\item{name}{\@author}
-			\item{e-mail}{\href{mailto:\Email}{\Email}}
-			\item{phone}{\Phone}
-}{%
-			\end{factlist}%
-		\end{flushleft}%
-	\end{minipage}%
-	\begin{minipage}{4cm}
-		\begin{flushright}
-			\includegraphics[width=3.5cm]{\picpath}
-		\end{flushright}
-	\end{minipage}
+	\end{basictable}
 }
 
 \endinput

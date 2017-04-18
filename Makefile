@@ -2,13 +2,13 @@
 .SUFFIXES: .pdf
 .PHONY: clean install
 
-TEX=pdflatex
+include config.mk
+
 FILES=banner.sty \
 	  lists.sty \
 	  brief.cls
 
-PREFIX=$(HOME)/texmf
-
+TEX=pdflatex
 EXAMPLES=banner-example.pdf \
 		 lists-examples.pdf \
 		 brief-example.pdf
@@ -23,8 +23,8 @@ clean:
 	rm -f *.aux *.log *.pdf
 
 install:
-	mkdir -p $(PREFIX)/tex/latex/custom/
-	cp $(FILES) $(PREFIX)/tex/latex/custom/
+	mkdir -p $(PREFIX)
+	cp $(FILES) $(PREFIX)
 
 uninstall:
-	cd $(PREFIX)/tex/latex/custom/ && rm -r $(FILES)
+	cd $(PREFIX) && rm -f $(FILES)
