@@ -70,7 +70,7 @@
 \lhead{\textcolor{darkgray}{\@author}}
 \rhead{\textcolor{darkgray}{\href{mailto:\Email}{\Email}}}
 \lfoot{\textcolor{darkgray}{\Address}}
-\rfoot{\textcolor{darkgray}{\thepage{}/\pageref{LastPage}}}
+\rfoot{\textcolor{darkgray}{Seite \thepage{} von \pageref{LastPage}}}
 \fancypagestyle{firstpage}
 {
 	\lhead{}
