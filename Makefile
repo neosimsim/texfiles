@@ -6,12 +6,14 @@ include config.mk
 
 FILES=banner.sty \
 	  lists.sty \
-	  brief.cls
+	  brief.cls \
+	  colorsections.sty
 
 TEX=pdflatex
 EXAMPLES=banner-example.pdf \
 		 lists-examples.pdf \
-		 brief-example.pdf
+		 brief-example.pdf \
+		 colorsections-example.pdf
 
 pdf: $(EXAMPLES)
 

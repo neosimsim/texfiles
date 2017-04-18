@@ -43,14 +43,13 @@
 
 % We want to colorize the first 3 letters of a section title.
 \RequirePackage{xstring}
+\RequirePackage{array}
 %}
 \newcommand{\sectioncolor}[1]{%
-	{%
-		% Color the first letters
-		\begin{cvtable}
-			\cvrow{\textcolor{\Themecolor}{\noindent\rule{\linewidth}{1.5pt}}}{\textcolor{\Themecolor}{\StrLeft{#1}{3}}\StrGobbleLeft{#1}{3}}
-		\end{cvtable}
-	}%
+	% Color the first letters
+	\begin{tabular*}{\textwidth}{@{}>{\raggedleft\arraybackslash}p{4cm}l@{}}
+		\textcolor{themecolor}{\noindent\rule{\linewidth}{1.5pt}} & \textcolor{themecolor}{\StrLeft{#1}{3}}\StrGobbleLeft{#1}{3}
+	\end{tabular*}
 }
 
 \renewcommand{\section}[1]{%
