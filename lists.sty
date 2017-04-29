@@ -56,7 +56,7 @@
 %         {url}
 \newenvironment{projectlist}{
 	\renewcommand{\item}[3]{%
-			\basicrow{##1}{\parbox[t]{0.7\linewidth}{##2\medskip\\ {\footnotesize\url{##3}}}} \medskip \\%
+		\basicrow{##1}{\parbox[t]{0.7\linewidth}{##2 \ifstrempty{##3}{}{\medskip \\\footnotesize\url{##3}}}} \medskip \\%
 	}
 	\begin{basictable}
 }{
