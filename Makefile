@@ -1,19 +1,19 @@
 .DELETE_ON_ERROR:
-.SUFFIXES: .pdf
+.SUFFIXES: .pdf .tex
 .PHONY: clean install
 
 include config.mk
 
 FILES=banner.sty \
-	  lists.sty \
-	  brief.cls \
-	  colorsections.sty
+	lists.sty \
+	brief.cls \
+	colorsections.sty
 
 TEX=pdflatex
 EXAMPLES=banner-example.pdf \
-		 lists-examples.pdf \
-		 brief-example.pdf \
-		 colorsections-example.pdf
+		lists-examples.pdf \
+		brief-example.pdf \
+		colorsections-example.pdf
 
 pdf: $(EXAMPLES)
 
