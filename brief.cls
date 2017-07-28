@@ -64,6 +64,7 @@
 	\end{flushright}
 	\textbf{\Subject{}}
 
+	\vspace{1eM}
 	\raggedright
 }
 
