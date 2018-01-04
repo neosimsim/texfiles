@@ -22,7 +22,7 @@ pdf: $(EXAMPLES)
 	$(TEX) $<
 
 clean:
-	rm -f *.aux *.log *.pdf
+	rm -f *.aux *.log *.pdf *.out
 
 install:
 	mkdir -p $(PREFIX)
