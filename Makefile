@@ -7,15 +7,19 @@ include config.mk
 FILES=banner.sty \
 	lists.sty \
 	brief.cls \
-	colorsections.sty
+	colorsections.sty \
+	neosimsim.sty \
 
-TEX=pdflatex
+TEX=xelatex
 EXAMPLES=banner-example.pdf \
 		lists-examples.pdf \
 		brief-example.pdf \
-		colorsections-example.pdf
+		colorsections-example.pdf \
+		neosimsim-example.pdf \
 
 pdf: $(EXAMPLES)
+
+neosimsim-example.pdf: neosimsim.sty
 
 .tex.pdf:
 	$(TEX) $<
