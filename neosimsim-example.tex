@@ -1,22 +1,31 @@
-\documentclass[]{article}
+\documentclass[titlepage]{article}
 
 \usepackage{neosimsim}
 \usepackage{neosimsim-a4paper}
+\usepackage{ngerman}
 \usepackage{lipsum}
 
 \geometry{paper=a5paper}
 
+\author{Alexander Ben Nasrallah}
+\title{Examples of common used Macros}
 \begin{document}
+\maketitle
+
+
+\toc{}
 
 \section{Hello}
 Hello World!!!
 
 \subsection{Unicode Math}
-\begin{align*}
+\begin{align}
 	∫_0^∞ 1 = ∞ \\
-	\mathbb{N} = ℕ \\
+	\mathbb{N} = ℕ \label{equation}\\
 	ω = b ⇔ b = ω
-\end{align*}
+\end{align}
+
+See. (\ref{equation}).
 
 \subsection{Unicode Listing}
 \begin{lstlisting}

@@ -30,12 +30,22 @@
 \RequirePackage{xcolor}
 \definecolor{codebg}{HTML}{F6F6F6}
 
+\RequirePackage{hyperref}
+
 \RequirePackage{listings}
 \lstset{%
     rulecolor=\color{black},
     frame=single,
     backgroundcolor=\color{codebg},
     basicstyle=\ttfamily
+}
+
+\newcommand{\toc}{%
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\setcounter{page}{0}
+\pagenumbering{arabic}
 }
 
 \endinput
