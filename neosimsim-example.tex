@@ -1,15 +1,24 @@
-\documentclass[a4paper]{article}
+\documentclass[]{article}
 
 \usepackage{neosimsim}
+\usepackage{neosimsim-a4paper}
+\usepackage{lipsum}
+
+\geometry{paper=a5paper}
 
 \begin{document}
 
+\section{Hello}
+Hello World!!!
 
+\subsection{Unicode Math}
 \begin{align*}
 	∫_0^∞ 1 = ∞ \\
-	\mathbb{N} = ℕ
+	\mathbb{N} = ℕ \\
+	ω = b ⇔ b = ω
 \end{align*}
 
+\subsection{Unicode Listing}
 \begin{lstlisting}
 and : Bool → Bool → Bool
 and = λ { true x → x ; false _ → false }
@@ -28,4 +37,9 @@ snd = λ { (a , b) → b }
 
 zero = 0
 \end{lstlisting}
+
+\section{Layout}
+\subsection{Lorem}
+\lipsum[2-4]
+
 \end{document}

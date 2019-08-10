@@ -9,6 +9,7 @@ FILES=banner.sty \
 	brief.cls \
 	colorsections.sty \
 	neosimsim.sty \
+	neosimsim-a4paper.sty \
 
 TEX=xelatex
 EXAMPLES=banner-example.pdf \
@@ -19,7 +20,7 @@ EXAMPLES=banner-example.pdf \
 
 pdf: $(EXAMPLES)
 
-neosimsim-example.pdf: neosimsim.sty
+neosimsim-example.pdf: neosimsim.sty neosimsim-a4paper.sty
 
 .tex.pdf:
 	$(TEX) $<
