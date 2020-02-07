@@ -10,6 +10,7 @@ FILES=banner.sty \
 	colorsections.sty \
 	neosimsim.sty \
 	neosimsim-a4paper.sty \
+	neosimsim-a5paper.sty \
 
 TEX=xelatex
 EXAMPLES=banner-example.pdf \
@@ -27,7 +28,7 @@ neosimsim-example.pdf: neosimsim.sty neosimsim-a4paper.sty
 	$(TEX) $<
 
 clean:
-	rm -f *.aux *.log *.pdf *.out
+	rm -f *.aux *.log *.pdf *.out *.toc
 
 install:
 	mkdir -p $(PREFIX)
