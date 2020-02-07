@@ -1,1 +1,1 @@
-PREFIX=$(HOME)/.local/texmf/tex/latex/custom
+PREFIX=$(HOME)/texmf/tex/latex/custom
